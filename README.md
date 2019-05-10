@@ -7,7 +7,13 @@ Test Role to play with Molecule. This setup has been tested on VM running Ubuntu
     * [Docker](#docker)
     * [Python VirtualEnv](#python-virtualEnv)
        * [Installation](#installation)
-       * [Create a new Python VirtualEnv](#create-a-new-python-virtualEnv)
+       * [Create a new Python VirtualEnv](#create-a-new-python-virtualenv)
+       * [Enable the newly-created VirtualEnv](#enable-the-newly-created-virtualenv)
+       * [Install Ansible and Molecule in the VirtualEnv](#install-ansible-and-molecule-in-the-virtualenv)
+       * [Test the installation](#test-the-installation)
+1. [Test role](#test-role)
+    * [Single step](#single-step)
+    * [Full test scenario](#full-test-scenario)
 
 ## Prerequisites
 
@@ -40,7 +46,7 @@ Installing setuptools, pkg_resources, pip, wheel...done.
 [+:DEV:~]$ source .venv/bin/activate
 ```
 
-#### Install Ansible and Molecule in the VirtualEnv:
+#### Install Ansible and Molecule in the VirtualEnv
 
 ```
 [+(.venv) :DEV:~]$ pip install ansible molecule docker
