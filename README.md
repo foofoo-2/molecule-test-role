@@ -1,6 +1,13 @@
 # molecule-test-role
 
-Test Role to play with Molecule. This setup has been tested on an Ubuntu 18.04 VM.
+Test Role to play with Molecule. This setup has been tested on VM running Ubuntu 18.04.
+
+## Table of contents
+1. [Prerequisites](#prerequisites)
+    * [Docker](#docker)
+    * [Python VirtualEnv](#python-virtualEnv)
+       * [Installation](#installation)
+       * [Create a new Python VirtualEnv](#create-a-new-python-virtualEnv)
 
 ## Prerequisites
 
