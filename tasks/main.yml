@@ -1,0 +1,13 @@
+---
+# tasks file for molecule-test-role
+
+- name: Install httpd package
+  package:
+    name: httpd
+    state: present
+
+- name: Start service httpd, if not started
+  service:
+    name: httpd
+    state: started
+    enabled: true
