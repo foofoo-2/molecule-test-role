@@ -1,0 +1,8 @@
+---
+- name: Prepare
+  hosts: all
+  tasks:
+    - name: Install net-tools
+      package:
+        name: net-tools
+        state: present
