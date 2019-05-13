@@ -25,3 +25,15 @@ def test_httpd_service(host):
 
     assert httpd_svc.is_enabled
     assert httpd_svc.is_running
+
+
+def test_socket_listening(host):
+    socket = host.socket('tcp://0.0.0.0:80')
+
+    assert socket.is_listening
+
+
+def test_command_output(host):
+    command = host.run('apachectl graceful')
+
+    assert command.rc == 0
